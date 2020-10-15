@@ -1,0 +1,13 @@
+(module lumberjack (layer F.Cu) (tedit 5F88B1A0)
+  (fp_text reference REF** (at 0 1.016) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value lumberjack (at 0 -0.762) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_poly (pts (xy -1.008 -11.938) (xy -0.008 -11.938) (xy 0 11.684) (xy -1 11.684)) (layer F.Mask) (width 0.1))
+  (fp_poly (pts (xy 1.024 -11.938) (xy 2.024 -11.938) (xy 2.024 11.684) (xy 1.024 11.684)) (layer F.Mask) (width 0.1))
+  (fp_poly (pts (xy -3.04 -11.938) (xy -2.04 -11.938) (xy -2.04 11.684) (xy -3.04 11.684)) (layer F.Mask) (width 0.1))
+  (fp_poly (pts (xy -5.072 -11.938) (xy -4.072 -11.938) (xy -4.072 11.684) (xy -5.072 11.684)) (layer F.Mask) (width 0.1))
+  (fp_poly (pts (xy 3.064 -11.938) (xy 4.064 -11.938) (xy 4.064 11.684) (xy 3.064 11.684)) (layer F.Mask) (width 0.1))
+)

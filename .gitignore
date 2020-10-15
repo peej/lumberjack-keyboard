@@ -1,0 +1,6 @@
+fp-info-cache
+fp-lib-table
+sym-lib-table
+*-cache.lib
+*-rescue.*
+*-bak
