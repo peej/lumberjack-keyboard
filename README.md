@@ -19,29 +19,29 @@ Inspired by the [Plaid keyboard](https://github.com/hsgw/plaid).
 
 # Bill of Materials (BOM)
 
-|Ref|num||
-| :- |  :- |  :- | 
-|C1,C2|2|multilayer ceramic capacitor 22pF or 20pF|
-|C3|1|electrolytic capacitor 10uF|
-|C4,C5|2|multilayer ceramic capacitor 0.1uF|
-|D1-65|65|diode 1n4148|
-|D66,D67|2|zener diode 3.6V|
-|F1|1|polyfuse 100mA|
-|J1|1|USB miniB connector Omron XM7D-0512 or equivalent|
-|J2|1|2x3 pin header|
-|LED1,LED2|2|3mm LED|
-|MX1-65|62-65|MX PCB mount (5 pin) keyboard switch|
-|R1,R7,R8|3|resistor 1.5kΩ|
-|R2,R3|2|resistor 75Ω|
-|R4|1|resistor 10kΩ|
-|SW50,SW51|2|tactile switch|
-|U1|1|ATMEGA328P|
-|Y1|1|crystal 16MHz|
-|PCB|1||
-|stabilizer|0-3|switch stabilizer for optional 2u keys|
-|cover|1|acrylic component cover|
-|screw|8|M2 8mm|
-|standoff|4|M2 10mm|
+|Ref      |Num  |Description                                      |
+|---------|-----|-------------------------------------------------| 
+|C1,C2    |2    |multilayer ceramic capacitor 22pF or 20pF        |
+|C3       |1    |electrolytic capacitor 10uF                      |
+|C4,C5    |2    |multilayer ceramic capacitor 0.1uF               |
+|D1-65    |65   |diode 1n4148                                     |
+|D66,D67  |2    |zener diode 3.6V                                 |
+|F1       |1    |polyfuse 100mA                                   |
+|J1       |1    |USB miniB connector Omron XM7D-0512 or equivalent|
+|J2       |1    |2x3 pin header                                   |
+|LED1,LED2|2    |3mm LED                                          |
+|MX1-65   |62-65|MX PCB mount (5 pin) keyboard switch             |
+|R1,R7,R8 |3    |resistor 1.5kΩ                                   |
+|R2,R3    |2    |resistor 75Ω                                     |
+|R4       |1    |resistor 10kΩ                                    |
+|SW50,SW51|2    |tactile switch                                   |
+|U1       |1    |ATMEGA328P                                       |
+|Y1       |1    |crystal 16MHz                                    |
+|PCB      |1    |                                                 |
+|stab     |0-2  |switch stabilizer for optional 2u keys           |
+|cover    |1    |acrylic component cover                          |
+|screw    |8    |M2 8mm                                           |
+|standoff |4    |M2 10mm                                          |
 
 # Ordering PCBs
 
@@ -53,18 +53,23 @@ When uploading the gerber zip files, use the default PCB settings.
 
 # Construction
 
-TBD
+Solder all the components onto the top side of the PCB except the USB connector which should be on the back of the board. Take care to put the correct value resistors and capacitors in the correct places.
+
+Ensure that polarised components (diodes, LEDs, electrolytic capacitor (C3), IC socket) are in the correct orientation. The square pad is for the negative side of the component; for a diode this means the side with the black stripe; for LEDs and C3 the short leg is the cathode and goes in the square pad.
 
 # Bootloader
 
-TBD
+You will need to flash the microprocessor with a bootloader. To do this you will need another device which can be connected to the ISP headers and used to flash the bootloader to the chip. Since Lumberjack is the same as the Plaid, we can use the same bootloader.
+
+* Download the [Plaid bootloader](https://github.com/hsgw/USBaspLoader/tree/plaid) and follow the instructions to compile the firmware.
+* Follow the [QMK ISP flashing guide](https://beta.docs.qmk.fm/using-qmk/guides/keyboard-building/isp_flashing_guide) to get the firmware onto the chip.
 
 # Firmware
 
-TBD
+The matrix and pinout of the Lumberjack are the same as the Plaid, so you can use the QMK Plaid firmware on the Lumberjack. Follow the [QMK firmware instructions](https://beta.docs.qmk.fm/using-qmk/guides/flashing/flashing) to build and flash the Plaid firmware.
 
 # Component cover
 
-95x38mm 2mm thick acrylic
+Cut a piece of 2mm thick acrylic to size (95x38mm) and drill 4 m2 holes in the corners for the standoffs. Use the PCB as a guide for the hole positions.
 
-TBD
+Affix the 4 standoffs to the PCB with screws from underneath the PCB. Use the remaining 4 screws to attach the acrylic to the top of the standoffs.
