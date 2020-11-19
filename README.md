@@ -22,8 +22,8 @@ Inspired by the [Plaid keyboard](https://github.com/hsgw/plaid).
 |Ref      |Num  |Description                                      |
 |---------|-----|-------------------------------------------------| 
 |C1,C2    |2    |multilayer ceramic capacitor 22pF or 20pF        |
-|C3       |1    |electrolytic capacitor 10uF                      |
-|C4,C5    |2    |multilayer ceramic capacitor 0.1uF               |
+|C3       |1    |electrolytic capacitor 4.7uF                     |
+|C4,C5    |2    |multilayer ceramic capacitor 100nF               |
 |D1-65    |65   |diode 1n4148                                     |
 |D66,D67  |2    |zener diode 3.6V                                 |
 |F1       |1    |polyfuse 100mA                                   |
@@ -34,7 +34,7 @@ Inspired by the [Plaid keyboard](https://github.com/hsgw/plaid).
 |R1,R7,R8 |3    |resistor 1.5kΩ                                   |
 |R2,R3    |2    |resistor 75Ω                                     |
 |R4       |1    |resistor 10kΩ                                    |
-|SW50,SW51|2    |tactile switch                                   |
+|SW50,SW51|2    |6mm tactile switch                               |
 |U1       |1    |ATMEGA328P                                       |
 |Y1       |1    |crystal 16MHz                                    |
 |PCB      |1    |                                                 |
@@ -50,6 +50,8 @@ PCBs can be manufactuered by a variety of online PCB fabricators. You can use [P
 The zip file in the gerber directory contains the gerber files your fabricator will need to make the PCB [lumberjack.zip](https://github.com/peej/lumberjack-keyboard/blob/master/gerber/lumberjack.zip) PCB.
 
 When uploading the gerber zip files, use the default PCB settings.
+
+![PCB](images/pcb.jpg)
 
 # Construction
 
