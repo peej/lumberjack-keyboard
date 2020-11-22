@@ -39,7 +39,7 @@ Inspired by the [Plaid keyboard](https://github.com/hsgw/plaid).
 |Y1       |1    |crystal 16MHz                                    |
 |PCB      |1    |                                                 |
 |stab     |0-2  |switch stabilizer for optional 2u keys           |
-|cover    |1    |acrylic component cover                          |
+|cover    |1    |acrylic component cover 95x57x2mm                |
 |screw    |8    |M2 8mm                                           |
 |standoff |4    |M2 10mm                                          |
 
@@ -72,6 +72,6 @@ The matrix and pinout of the Lumberjack are the same as the Plaid, so you can us
 
 # Component cover
 
-Cut a piece of 2mm thick acrylic to size (95x38mm) and drill 4 m2 holes in the corners for the standoffs. Use the PCB as a guide for the hole positions.
+Cut a piece of 2mm thick acrylic to size (95x57mm) and drill 4 m2 holes in the corners for the standoffs. Use the PCB as a guide for the hole positions.
 
 Affix the 4 standoffs to the PCB with screws from underneath the PCB. Use the remaining 4 screws to attach the acrylic to the top of the standoffs.
