@@ -63,12 +63,22 @@ Ensure that polarised components (diodes, LEDs, electrolytic capacitor (C3), IC 
 
 You will need to flash the microprocessor with a bootloader. To do this you will need another device which can be connected to the ISP headers and used to flash the bootloader to the chip. Since Lumberjack is the same as the Plaid, we can use the same bootloader.
 
-* Download the [Plaid bootloader](https://github.com/hsgw/USBaspLoader/tree/plaid) and follow the instructions to compile the firmware.
-* Follow the [QMK ISP flashing guide](https://beta.docs.qmk.fm/using-qmk/guides/keyboard-building/isp_flashing_guide) to get the firmware onto the chip.
+* Download the [Plaid bootloader](https://github.com/hsgw/USBaspLoader/tree/plaid) and follow the instructions to compile the bootloader.
+* Follow the [QMK ISP flashing guide](https://beta.docs.qmk.fm/using-qmk/guides/keyboard-building/isp_flashing_guide) to get the bootloader onto the chip.
 
 # Firmware
 
-The matrix and pinout of the Lumberjack are the same as the Plaid, so you can use the QMK Plaid firmware on the Lumberjack. Follow the [QMK firmware instructions](https://beta.docs.qmk.fm/using-qmk/guides/flashing/flashing) to build and flash the Plaid firmware.
+To create firmware it is easist to start with a copy of the [Plaid firmware](https://github.com/qmk/qmk_firmware/tree/master/keyboards/dm9records/plaid) and adjust the configuration to have the following pin configuration:
+
+| Configuration   | Value                                  |
+|-----------------|----------------------------------------|
+| MATRIX_ROWS     | 6                                      |
+| MATRIX_COLS     | 10                                     |
+| MATRIX_ROW_PINS | C0, B5, B4, B3, B2, B1                 |
+| MATRIX_COL_PINS | B0, D7, D6, D5, D4, D1, D0, C1, C2, C3 |
+| DIODE_DIRECTION | COL2ROW                                |
+
+Follow the [QMK firmware instructions](https://beta.docs.qmk.fm/using-qmk/guides/flashing/flashing) to build and flash the firmware.
 
 # Component cover
 
