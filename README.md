@@ -19,29 +19,31 @@ Inspired by the [Plaid keyboard](https://github.com/hsgw/plaid).
 
 # Bill of Materials (BOM)
 
-|Ref      |Num  |Description                                      |
-|---------|-----|-------------------------------------------------| 
-|C1,C2    |2    |multilayer ceramic capacitor 22pF or 20pF        |
-|C3       |1    |electrolytic capacitor 4.7uF                     |
-|C4,C5    |2    |multilayer ceramic capacitor 100nF               |
-|D1-65    |65   |diode 1n4148                                     |
-|D66,D67  |2    |zener diode 3.6V                                 |
-|F1       |1    |polyfuse 100mA                                   |
-|J1       |1    |USB miniB connector Omron XM7D-0512 or equivalent|
-|J2       |1    |2x3 pin header                                   |
-|LED1,LED2|2    |3mm LED                                          |
-|MX1-65   |62-65|MX PCB mount (5 pin) keyboard switch             |
-|R1,R7,R8 |3    |resistor 1.5kΩ                                   |
-|R2,R3    |2    |resistor 75Ω                                     |
-|R4       |1    |resistor 10kΩ                                    |
-|SW50,SW51|2    |6mm tactile switch                               |
-|U1       |1    |ATMEGA328P                                       |
-|Y1       |1    |crystal 16MHz                                    |
-|PCB      |1    |                                                 |
-|stab     |0-2  |switch stabilizer for optional 2u keys           |
-|cover    |1    |acrylic component cover 95x57x2mm                |
-|screw    |8    |M2 8mm                                           |
-|standoff |4    |M2 10mm                                          |
+![BOM](images/bom.jpg)
+
+| Ref       | Num   | Description                                       |
+|-----------|-------|---------------------------------------------------|
+| C1,C2     | 2     | multilayer ceramic capacitor 22pF or 20pF         |
+| C3        | 1     | electrolytic capacitor 4.7uF                      |
+| C4,C5     | 2     | multilayer ceramic capacitor 100nF                |
+| D1-65     | 65    | diode 1n4148                                      |
+| D66,D67   | 2     | zener diode 3.6V                                  |
+| F1        | 1     | polyfuse 100mA                                    |
+| J1        | 1     | USB miniB connector Omron XM7D-0512 or equivalent |
+| J2        | 1     | 2x3 pin header                                    |
+| LED1,LED2 | 2     | 3mm LED                                           |
+| MX1-65    | 62-65 | MX PCB mount (5 pin) keyboard switch              |
+| R1,R7,R8  | 3     | resistor 1.5kΩ                                    |
+| R2,R3     | 2     | resistor 75Ω                                      |
+| R4        | 1     | resistor 10kΩ                                     |
+| SW50,SW51 | 2     | 6mm tactile switch                                |
+| U1        | 1     | ATMEGA328P                                        |
+| Y1        | 1     | crystal 16MHz                                     |
+| PCB       | 1     | see ordering details below                        |
+| stab      | 0-2   | switch stabilizer for optional 2u keys            |
+| cover     | 1     | acrylic component cover 95x57x2mm                 |
+| screw     | 8     | M2 8mm                                            |
+| standoff  | 4     | M2 10mm                                           |
 
 # Ordering PCBs
 
