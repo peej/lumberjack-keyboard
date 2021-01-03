@@ -1,6 +1,8 @@
 # Lumberjack - Through-hole ortholinear 60% keyboard PCB
 
-Lumberjack is a split 12x6 ortholinear keyboard PCB using through-hole components only.
+Lumberjack is a split 5x12 ortholinear keyboard PCB using through-hole components only.
+
+![Tofu w/ SA Vilebloom](images/tofu-sa-vilebloom.jpg)
 
 The goal of this project is to build an all through-hole component ortholinear PCB that fits in a standard 60% tray mount case.
 
@@ -57,9 +59,17 @@ When uploading the gerber zip files, use the default PCB settings.
 
 # Construction
 
-Solder all the components onto the top side of the PCB except the USB connector which should be on the back of the board. Take care to put the correct value resistors and capacitors in the correct places.
+Solder all the components onto the top side of the PCB except the USB connector which should be on the back of the board. Leave the larger components until last so that the board will lie flat upsidedown while you solder the resistors and capacitors.
+
+Take care to put the correct value resistors and capacitors in the correct places, the values are written on the silkmask along with the component reference. If you are unsure about the value of a resistor, check it with a multimeter.
 
 Ensure that polarised components (diodes, LEDs, electrolytic capacitor (C3), IC socket) are in the correct orientation. The square pad is for the negative side of the component; for a diode this means the side with the black stripe; for LEDs and C3 the short leg is the cathode and goes in the square pad.
+
+When fitting key switches, the switches at the 'Q' and 'P' positions on the 2nd row will fowl on the standoffs in your keyboard case, so you need to trim down one of the stabilizing pins and part of the center pin to ensure the PCB fits flush within the case.
+
+If you are using a 2u key on the right hand side, you will also need to trim down the center pin so that it does not fowl on the standoff. The position the case standoffs will be is marked on the soldermask of the underside of the PCB.
+
+Note also that the switches at the '1' and 'Q' positions are upsidedown so that the switch pins do not interfere with the USB connector or case standoffs.
 
 # Bootloader
 
@@ -87,3 +97,5 @@ Follow the [QMK firmware instructions](https://beta.docs.qmk.fm/using-qmk/guides
 Cut a piece of 2mm thick acrylic to size (95x57mm) and drill 4 m2 holes in the corners for the standoffs. Use the PCB as a guide for the hole positions.
 
 Affix the 4 standoffs to the PCB with screws from underneath the PCB. Use the remaining 4 screws to attach the acrylic to the top of the standoffs.
+
+![Completed build w/o caps](images/complete.jpg)
