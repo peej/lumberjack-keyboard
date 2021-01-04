@@ -15,8 +15,6 @@ Inspired by the [Plaid keyboard](https://github.com/hsgw/plaid).
 * Get that visible component aesthetic in a standard 60% tray-mount case.
 * Plateless.
 
-![Layout options](images/layout.png)
-
 ![PCB design](images/pcb-design.png)
 
 # Bill of Materials (BOM)
@@ -38,7 +36,7 @@ Inspired by the [Plaid keyboard](https://github.com/hsgw/plaid).
 | R1,R7,R8  | 3     | resistor 1.5kΩ                                    |
 | R2,R3     | 2     | resistor 75Ω                                      |
 | R4        | 1     | resistor 10kΩ                                     |
-| SW50,SW51 | 2     | 6mm tactile switch                                |
+| SW1,SW2   | 2     | 6mm tactile switch                                |
 | U1        | 1     | ATMEGA328P                                        |
 | Y1        | 1     | crystal 16MHz                                     |
 | PCB       | 1     | see ordering details below                        |
@@ -90,7 +88,17 @@ To create firmware it is easist to start with a copy of the [Plaid firmware](htt
 | MATRIX_COL_PINS | B0, D7, D6, D5, D4, D1, D0, C1, C2, C3 |
 | DIODE_DIRECTION | COL2ROW                                |
 
+Due to the limited pin number of the ATMEGA328P, the PCB uses a 6 by 10 matrix (16 pins) instead of a 5 by 12 matrix (17 pins), this makes organising the matrix within QMK slightly more complicated. The image below shows pins for each key.
+
+![Layout pins](images/layout.png)
+
 Follow the [QMK firmware instructions](https://beta.docs.qmk.fm/using-qmk/guides/flashing/flashing) to build and flash the firmware.
+
+To put the board into bootloader mode so it is ready to recieve firmware, press and hold the BOOT button (SW2) while pressing and releasing the RESET button (SW1). The board will now be detected as an USBasp device and can have the firmware flashed via the USB port.
+
+Pressing the RESET button (SW1) on its own will restart the microprocessor. Once flashed with firmware it is neccessary to reset the keyboard so as to return control to the new firmware.
+
+Note that due to the BOOT button (SW2) sharing a pin with column 3, when pressed the keys in that column will also activate. This is expected behavour but can be a little annoying or confusing if you are not expecting it.
 
 # Component cover
 
