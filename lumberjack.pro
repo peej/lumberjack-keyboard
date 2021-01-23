@@ -1,4 +1,4 @@
-update=2020 October 12, Monday 22:42:56
+update=2021 January 23, Saturday 16:12:11
 version=1
 last_client=kicad
 [cvpcb]
@@ -62,7 +62,7 @@ OthersTextSizeH=1
 OthersTextSizeThickness=0.15
 OthersTextItalic=0
 OthersTextUpright=1
-SolderMaskClearance=0.2
+SolderMaskClearance=0
 SolderMaskMinWidth=0
 SolderPasteClearance=0
 SolderPasteRatio=-0
