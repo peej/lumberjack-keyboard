@@ -26,7 +26,7 @@ Inspired by the [Plaid keyboard](https://github.com/hsgw/plaid).
 | C1,C2     | 2     | multilayer ceramic capacitor 22pF or 20pF         |
 | C3        | 1     | electrolytic capacitor 4.7uF                      |
 | C4,C5     | 2     | multilayer ceramic capacitor 100nF                |
-| D1-65     | 65    | diode 1n4148                                      |
+| D1-60     | 60    | diode 1n4148                                      |
 | D66,D67   | 2     | zener diode 3.6V                                  |
 | F1        | 1     | polyfuse 100mA                                    |
 | J1        | 1     | USB miniB connector Omron XM7D-0512 or USB-C connector USB4085-GF-A |
@@ -38,7 +38,7 @@ Inspired by the [Plaid keyboard](https://github.com/hsgw/plaid).
 | R4        | 1     | resistor 10kΩ                                     |
 | R5,R6     | 2     | resistor 5.1kΩ for USB-C only                     |
 | SW1,SW2   | 2     | 6mm tactile switch                                |
-| U1        | 1     | ATMEGA328P                                        |
+| U1        | 1     | ATMEGA328P-PU                                     |
 | Y1        | 1     | crystal 16MHz                                     |
 | PCB       | 1     | see ordering details below                        |
 | stab      | 0-2   | switch stabilizer for optional 2u keys            |
@@ -55,6 +55,8 @@ The zip file in the gerber directory contains the gerber files your fabricator w
 When uploading the gerber zip files, use the default PCB settings.
 
 ![PCB](images/pcb.jpg)
+
+If you want to use a plate, there are gerbers for an FR4 plate. You will need two plates, one for each half of the keyboard.
 
 # Construction
 
