@@ -29,13 +29,14 @@ Inspired by the [Plaid keyboard](https://github.com/hsgw/plaid).
 | D1-65     | 65    | diode 1n4148                                      |
 | D66,D67   | 2     | zener diode 3.6V                                  |
 | F1        | 1     | polyfuse 100mA                                    |
-| J1        | 1     | USB miniB connector Omron XM7D-0512 or equivalent |
+| J1        | 1     | USB miniB connector Omron XM7D-0512 or USB-C connector USB4085-GF-A |
 | J2        | 1     | 2x3 pin header                                    |
 | LED1,LED2 | 2     | 3mm LED                                           |
 | MX1-65    | 62-65 | MX PCB mount (5 pin) keyboard switch              |
 | R1,R7,R8  | 3     | resistor 1.5kΩ                                    |
 | R2,R3     | 2     | resistor 75Ω                                      |
 | R4        | 1     | resistor 10kΩ                                     |
+| R5,R6     | 2     | resistor 5.1kΩ for USB-C only                     |
 | SW1,SW2   | 2     | 6mm tactile switch                                |
 | U1        | 1     | ATMEGA328P                                        |
 | Y1        | 1     | crystal 16MHz                                     |
@@ -63,11 +64,26 @@ Take care to put the correct value resistors and capacitors in the correct place
 
 Ensure that polarised components (diodes, LEDs, electrolytic capacitor (C3), IC socket) are in the correct orientation. The square pad is for the negative side of the component; for a diode this means the side with the black stripe; for LEDs and C3 the short leg is the cathode and goes in the square pad.
 
+## USB-C
+
+If you are installing a USB-C connector you will need to install two extra resistors (R5 & R6).
+
+Due to the small size of the pins on the connector you will need to use a different soldering technique called drag soldering.
+
+* Insert the USB port into the board, the pins are very small and might need bending slightly so that they align correctly.
+* Flip the board over and solder one of the legs into place.
+* Reheat the pad and press the USB port firmly into place to ensure it sits flat before then soldering the other 3 legs.
+* Apply no-clean flux across all of the small pins.
+* Apply a small amount of solder and drag your iron across the pins, repeat until all holes are filled with solder.
+* The flux will cause the solder to flow to the pins and avoid creating solder bridges between the pins.
+
+## Switches
+
 When fitting key switches, the switches at the 'Q' and 'P' positions on the 2nd row will fowl on the standoffs in your keyboard case, so you need to trim down one of the stabilizing pins and part of the center pin to ensure the PCB fits flush within the case.
 
 If you are using a 2u key on the right hand side, you will also need to trim down the center pin so that it does not fowl on the standoff. The position the case standoffs will be is marked on the soldermask of the underside of the PCB.
 
-Note also that the switches at the '1' and 'Q' positions are upsidedown so that the switch pins do not interfere with the USB connector or case standoffs.
+Note also that the switches at the 'Q' position is upsidedown so that the switch pins do not interfere with the case standoffs.
 
 # Bootloader
 
