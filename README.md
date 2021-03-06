@@ -13,7 +13,8 @@ Inspired by the [Plaid keyboard](https://github.com/hsgw/plaid).
 * Designed to be easy to build with minimal soldering experience.
 * All through-hole components, no SMD soldering required.
 * Get that visible component aesthetic in a standard 60% tray-mount case.
-* Plateless.
+* Supports both USB Mini and USB-C.
+* Plateless or with FR4 switch plates.
 
 ![PCB design](images/pcb-design.png)
 
@@ -85,7 +86,7 @@ When fitting key switches, the switches at the 'Q' and 'P' positions on the 2nd 
 
 If you are using a 2u key on the right hand side, you will also need to trim down the center pin so that it does not fowl on the standoff. The position the case standoffs will be is marked on the soldermask of the underside of the PCB.
 
-Note also that the switches at the 'Q' position is upsidedown so that the switch pins do not interfere with the case standoffs.
+Note also that the switch at the 'Q' position is upsidedown so that the switch pins do not interfere with the case standoffs.
 
 # Bootloader
 
@@ -93,6 +94,8 @@ You will need to flash the microprocessor with a bootloader. To do this you will
 
 * Download the [Plaid bootloader](https://github.com/hsgw/USBaspLoader/tree/plaid) and follow the instructions to compile the bootloader.
 * Follow the [QMK ISP flashing guide](https://beta.docs.qmk.fm/using-qmk/guides/keyboard-building/isp_flashing_guide) to get the bootloader onto the chip.
+
+Note: If you got your Lumberjack kit as part of the group buy, the microprocesor is already flashed with a bootloader and firmware, and you can skip this and the next steps.
 
 # Firmware
 
