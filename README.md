@@ -46,19 +46,7 @@ See [the build guide](guide.md) for more information.
 
 # Firmware
 
-To create firmware it is easist to start with a copy of the [Plaid firmware](https://github.com/qmk/qmk_firmware/tree/master/keyboards/dm9records/plaid) and adjust the configuration to have the following pin configuration:
-
-| Configuration   | Value                                  |
-|-----------------|----------------------------------------|
-| MATRIX_ROWS     | 6                                      |
-| MATRIX_COLS     | 10                                     |
-| MATRIX_ROW_PINS | C0, B5, B4, B3, B2, B1                 |
-| MATRIX_COL_PINS | B0, D7, D6, D5, D4, D1, D0, C1, C2, C3 |
-| DIODE_DIRECTION | COL2ROW                                |
-
-Due to the limited pin number of the ATMEGA328P, the PCB uses a 6 by 10 matrix (16 pins) instead of a 5 by 12 matrix (17 pins), this makes organising the matrix within QMK slightly more complicated. The image below shows pins for each key.
-
-![Layout pins](images/layout.png)
+Firmware is available in the QMK repository under the name `peej/lumberjack`.
 
 Follow the [QMK firmware instructions](https://beta.docs.qmk.fm/using-qmk/guides/flashing/flashing) to build and flash the firmware.
 
@@ -68,6 +56,25 @@ Pressing the RESET button (SW1) on its own will restart the microprocessor. Once
 
 Note that due to the BOOT button (SW2) sharing a pin with column 3, when pressed the keys in that column will also activate. This is expected behavour but can be a little annoying or confusing if you are not expecting it.
 
+## VIA
+
+There is a VIA compatible firmware available in QMK. With this firmware flashed, the board will be automatically recognised by VIA when you plug it in.
+
+## Matrix information
+
+If you are building your own firmware, the following matrix information will be useful to you:
+
+| Configuration   | Value                                  |
+|-----------------|----------------------------------------|
+| MATRIX_ROWS     | 6                                      |
+| MATRIX_COLS     | 10                                     |
+| MATRIX_ROW_PINS | C0, B5, B4, B3, B2, B1                 |
+| MATRIX_COL_PINS | B0, D7, D6, D5, D4, D1, D0, C1, C2, C3 |
+| DIODE_DIRECTION | COL2ROW                                |
+
+Due to the limited pin number of the ATMEGA328P, the PCB uses a 6 by 10 matrix (16 pins) instead of a 5 by 12 matrix (17 pins), this makes organising the matrix in your firmware slightly more complicated. The image below shows pins for each key.
+
+![Layout pins](images/layout.png)
 # Component cover
 
 Cut a piece of 2mm thick acrylic to size (95x57mm) and drill 4 m2 holes in the corners for the standoffs. Use the PCB or cover.dxf as a guide for the hole positions, you can also use cover.dxf for laser cutting the correct size acrylic.
