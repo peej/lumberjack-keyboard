@@ -5,7 +5,7 @@
 |                                    | Ref       | Qty | Value or Part# | Description                  |
 |------------------------------------|-----------|-----|----------------|------------------------------|
 | ![C1,C2](images/bom/c1-2.jpg)      | C1,C2     | 2   | 22pF           | multilayer ceramic capacitor |
-| ![C3](images/bom/c3.jpg)           | C3        | 1   | 4.7uF          | electrolytic capacitor       |
+| ![C3](images/bom/c3.jpg)           | C3        | 1   | 4.7uF 7mm      | electrolytic capacitor       |
 | ![C4,C5](images/bom/c4-5.jpg)      | C4,C5     | 2   | 100nF / 0.1uF  | multilayer ceramic capacitor |
 |                                    | D1-60     | 60  | 1n4148         | diode                        |
 | ![D66,D67](images/bom/d61-62.jpg)  | D66,D67   | 2   | 3.6V           | zener diode                  |
@@ -27,4 +27,4 @@
 |                                    | screw     | 8   | M2 8mm         |                              |
 |                                    | standoff  | 4   | M2 10mm        |                              |
 
-For your convienience, here is the [BOM on Octopart](https://octopart.com/bom-tool/SXFI7Fls).
+For your convienience, here is the [BOM on Octopart](https://octopart.com/bom-tool/0k8Ap0AF).
