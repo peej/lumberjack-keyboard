@@ -119,7 +119,7 @@ LEDs are a polarized component and therefore take care of direction, the short l
 
 Solder on the IC socket. 
 
-The IC socket is a polarized component, check the notch on silkscreen and IC Socket.
+The IC socket mounts a polarized component, check the notch on silkscreen and IC Socket.
 
 ![IC Socket](images/guide/ic-socket.jpg)
 
@@ -155,7 +155,7 @@ Used for programming the microprocessor with the bootloader directly. If your MC
 
 Insert ATMEGA328P into IC Socket.
 
-Ensure that you insert it in the correct orientation, the semicircular mark should match that of the IC socket.
+Ensure that you insert it in the correct orientation, the semicircular mark should match that of the silkscreen.
 
 ![ATMEGA328P](images/guide/atmega328p.jpg)
 
