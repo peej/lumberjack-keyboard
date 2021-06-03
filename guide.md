@@ -164,7 +164,7 @@ Ensure that you insert it in the correct orientation, the semicircular mark shou
 Before connecting the board to your computer, a few things to double check just to be safe:
 
 * Take a close look at the USB connector pins and visually check there is no short between the VCC and GND pins. If you have a multimeter, now might be a good time to use it.
-* Check the orientation of polarized components (ATMEGA328p, diode, resettable fuse, electrolytic capacitor).
+* Check the orientation of polarized components (ATMEGA328p, diode, electrolytic capacitor).
 * Double check the correct resistor values are in the correct locations.
 
 ## Software
