@@ -8,7 +8,7 @@
 | ![C3](images/bom/c3.jpg)           | C3        | 1   | 4.7uF 7mm      | electrolytic capacitor       |
 | ![C4,C5](images/bom/c4-5.jpg)      | C4,C5     | 2   | 100nF / 0.1uF  | multilayer ceramic capacitor |
 |                                    | D1-60     | 60  | 1n4148         | diode                        |
-| ![D66,D67](images/bom/d61-62.jpg)  | D66,D67   | 2   | 3.6V           | zener diode                  |
+| ![D61,D62](images/bom/d61-62.jpg)  | D61,D62   | 2   | 3.6V           | zener diode                  |
 | ![F1](images/bom/f1.jpg)           | F1        | 1   | 100mA          | polyfuse                     |
 | ![USB](images/bom/j1-mini.jpg)     | J1        | 1   | XM7D-0512      | USB miniB connector          |
 | ![USB-C](images/bom/j1-usbc.jpg)   | J1        | 1   | USB4085-GF-A   | USB-C connector              |

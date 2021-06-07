@@ -17,9 +17,9 @@ This assembly guide will guide you through putting together your Lumberjack keyb
 
 ## Soldering
 
-### Zener diodes (D66,67)
+### Zener diodes (D61,62)
 
-Solder the Zener diodes D66 and D67.
+Solder the Zener diodes D61 and D62 (D66 and D67 in older PCB revisions).
 
 Diodes are a polarized component and therefore take care of direction, the black line on the diode is the cathode and goes in the square pad on PCB.
 
