@@ -63,9 +63,11 @@ Solder the crystal.
 
 ### Capacitors (C1,2,4,5)
 
-Solder the small brown capacitors C1 and C2.
+Solder the small yellow 22pF capacitors C1 and C2 (marked 22, alternatively they may be small and brown in your kit).
 
-Solder the slightly larger yellow capacitors C4 and C5.
+Solder the small yellow 100nF capacitors C4 and C5 (marked 104).
+
+Do not get the two sets of capacitors confused.
 
 ![Capacitors](images/guide/capacitors.jpg)
 
