@@ -129,7 +129,11 @@ Do not insert microcontroller into the socket before soldering the socket to the
 
 ### Electrolytic capacitor (C3)
 
-Electrolytic capacitor is a polarized component, the short leg is the cathode and goes in the square pad on PCB. To fit under the component cover, ensure that your capacitor body is less than 10mm tall.
+Electrolytic capacitor is a polarized component, the short leg is the cathode and goes in the circular (left) pad on PCB.
+
+Note that the pads shapes on the PCB are flipped, so what should be the square pad is actually circular, this may be fixed in a future revision.
+
+To fit under the component cover, ensure that your capacitor body is less than 10mm tall.
 
 ![Capacitor](images/guide/capacitor.jpg)
 
