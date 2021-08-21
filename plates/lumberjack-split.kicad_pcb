@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew "(5.1.9-0-10_14)")
+(kicad_pcb (version 20171130) (host pcbnew "(5.1.10-1-10_14)")
 
   (general
     (thickness 1.6)
@@ -86,7 +86,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "gerbers/plate/"))
+      (outputdirectory "gerbers"))
   )
 
   (net 0 "")
@@ -236,7 +236,7 @@
   (gr_arc (start 214.907993 143.470433) (end 214.907993 145.256372) (angle -90) (layer Edge.Cuts) (width 0.1))
   (gr_arc (start 214.907993 51.792231) (end 216.693932 51.792231) (angle -90) (layer Edge.Cuts) (width 0.1))
 
-  (zone (net 0) (net_name "") (layer F.Cu) (tstamp 6036BAE8) (hatch edge 0.508)
+  (zone (net 0) (net_name "") (layer F.Cu) (tstamp 6120AB36) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -557,7 +557,7 @@
       )
     )
   )
-  (zone (net 0) (net_name "") (layer B.Cu) (tstamp 6036BAE5) (hatch edge 0.508)
+  (zone (net 0) (net_name "") (layer B.Cu) (tstamp 6120AB33) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
