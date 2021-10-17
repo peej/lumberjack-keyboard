@@ -2,7 +2,7 @@
 
 Lumberjack is a split 5x12 ortholinear keyboard PCB using through-hole components only.
 
-![Tofu w/ SA Vilebloom](images/tofu-sa-vilebloom.jpg)
+![Tofu w/ KAT Space Cadet](images/tofu-kat-spacecadet.jpg)
 
 The goal of this project is to build an all through-hole component ortholinear PCB that fits in a standard 60% tray mount case.
 
