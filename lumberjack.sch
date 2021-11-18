@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Lumberjack PCB"
-Date ""
-Rev ""
+Date "2021-11-18"
+Rev "1.5"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -139,7 +139,7 @@ U 1 1 5C14911F
 P 5600 2250
 F 0 "MX8" H 5600 2535 50  0000 C CNN
 F 1 "SW_Push" H 5600 2444 50  0000 C CNN
-F 2 "lumberjack:MX" H 5600 2450 50  0001 C CNN
+F 2 "lumberjack:MX_NTHSTH" H 5600 2450 50  0001 C CNN
 F 3 "" H 5600 2450 50  0001 C CNN
 	1    5600 2250
 	-1   0    0    -1  
@@ -2531,13 +2531,13 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x04 J3
 U 1 1 600CB1E1
-P 2750 2750
-F 0 "J3" H 2900 2650 50  0000 C CNN
-F 1 "JST" H 2900 2750 50  0000 C CNN
-F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 2750 2750 50  0001 C CNN
-F 3 "~" H 2750 2750 50  0001 C CNN
-	1    2750 2750
-	0    1    1    0   
+P 2150 2650
+F 0 "J3" H 2300 2550 50  0000 C CNN
+F 1 "JST" H 2300 2650 50  0000 C CNN
+F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 2150 2650 50  0001 C CNN
+F 3 "~" H 2150 2650 50  0001 C CNN
+	1    2150 2650
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:D_Schottky_Small_ALT D61
@@ -2588,28 +2588,13 @@ U 1 1 601E2E5D
 P 1150 1800
 F 0 "J1" H 1257 2667 50  0000 C CNN
 F 1 "USB" H 1257 2576 50  0000 C CNN
-F 2 "lumberjack:USB_Hybrid_THT" H 1300 1800 50  0001 C CNN
+F 2 "lumberjack:USB_Hybrid" H 1300 1800 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1300 1800 50  0001 C CNN
 	1    1150 1800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2750 1900 2750 2550
-Wire Wire Line
-	2850 1400 2850 2550
-Wire Wire Line
 	2650 2000 2650 2550
-$Comp
-L power:GND #PWR0103
-U 1 1 60828AA2
-P 2550 2400
-F 0 "#PWR0103" H 2550 2150 50  0001 C CNN
-F 1 "GND" H 2555 2227 50  0000 C CNN
-F 2 "" H 2550 2400 50  0001 C CNN
-F 3 "" H 2550 2400 50  0001 C CNN
-	1    2550 2400
-	-1   0    0    1   
-$EndComp
 $Comp
 L Device:R_Small R5
 U 1 1 6092B761
@@ -2643,8 +2628,6 @@ Wire Wire Line
 Wire Wire Line
 	2100 1700 2000 1700
 Connection ~ 2100 1700
-Wire Wire Line
-	2550 2550 2550 2400
 Text Label 4700 1850 2    50   ~ 0
 ROW0
 Wire Wire Line
@@ -2723,4 +2706,62 @@ Wire Wire Line
 Connection ~ 3250 2400
 Wire Wire Line
 	3250 2400 3400 2400
+$Comp
+L Connector_Generic:Conn_01x04 J4
+U 1 1 618223C0
+P 2150 3150
+F 0 "J4" H 2300 3050 50  0000 C CNN
+F 1 "JST" H 2300 3150 50  0000 C CNN
+F 2 "lumberjack:S4B-ZRLFSN" H 2150 3150 50  0001 C CNN
+F 3 "~" H 2150 3150 50  0001 C CNN
+	1    2150 3150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2650 2550 2350 2550
+Wire Wire Line
+	2650 2550 2650 3150
+Connection ~ 2650 2550
+Wire Wire Line
+	2750 2650 2350 2650
+Wire Wire Line
+	2750 1900 2750 2650
+Wire Wire Line
+	2750 2650 2750 3050
+Connection ~ 2750 2650
+$Comp
+L power:GND #PWR0106
+U 1 1 6183C7E7
+P 2350 3250
+F 0 "#PWR0106" H 2350 3000 50  0001 C CNN
+F 1 "GND" H 2355 3077 50  0000 C CNN
+F 2 "" H 2350 3250 50  0001 C CNN
+F 3 "" H 2350 3250 50  0001 C CNN
+	1    2350 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 60828AA2
+P 2350 2450
+F 0 "#PWR0103" H 2350 2200 50  0001 C CNN
+F 1 "GND" H 2355 2277 50  0000 C CNN
+F 2 "" H 2350 2450 50  0001 C CNN
+F 3 "" H 2350 2450 50  0001 C CNN
+	1    2350 2450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2850 2750 2350 2750
+Wire Wire Line
+	2850 1400 2850 2750
+Wire Wire Line
+	2850 2750 2850 2950
+Connection ~ 2850 2750
+Wire Wire Line
+	2650 3150 2350 3150
+Wire Wire Line
+	2750 3050 2350 3050
+Wire Wire Line
+	2850 2950 2350 2950
 $EndSCHEMATC
