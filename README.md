@@ -60,6 +60,10 @@ Note that due to the BOOT button (SW2) sharing a pin with column 3, when pressed
 
 There is a VIA compatible firmware available in QMK. With this firmware flashed, the board will be automatically recognised by VIA when you plug it in.
 
+## Bootloader
+
+If you have a "raw" chip without a bootloader, you will need to compile and flash the bootloader onto the chip via another device. [See the build guide for more information](guide.md#bootloader).
+
 ## Matrix information
 
 If you are building your own firmware, the following matrix information will be useful to you:
