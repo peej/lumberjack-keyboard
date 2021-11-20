@@ -131,7 +131,7 @@ Do not insert microcontroller into the socket before soldering the socket to the
 
 Electrolytic capacitor is a polarized component, the short leg is the cathode and goes in the circular (left) pad on PCB.
 
-Note that the pads shapes on the PCB are flipped, so what should be the square pad is actually circular, this may be fixed in a future revision.
+The soldermask around the pads can cause confusion about which is the square pad as the circular pad has a square soldermask pattern around it, so be careful and double check. If in doubt, the capacitor should be orientated so that the side with the white line on it is on the left.
 
 To fit under the component cover, ensure that your capacitor body is less than 10mm tall.
 
