@@ -115,5 +115,6 @@ Affix the 4 standoffs to the PCB with screws from underneath the PCB. Use the re
 
 * Change board outline to include cutouts for Bakeneko 60
 * Re-route traces away from edges of the board
+* Change MX footprints to MX/Alps/Choc combined footprint
 * Add through-hole JST connector footprint
 * Add silkscreen art to underside
