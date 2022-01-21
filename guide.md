@@ -133,9 +133,13 @@ Electrolytic capacitor is a polarized component, the short leg is the cathode an
 
 The soldermask around the pads can cause confusion about which is the square pad as the circular pad has a square soldermask pattern around it, so be careful and double check. If in doubt, the capacitor should be orientated so that the side with the white line on it is on the left.
 
+![Capacitor](images/guide/capacitor.jpg)
+
 To fit under the component cover, ensure that your capacitor body is less than 10mm tall.
 
-![Capacitor](images/guide/capacitor.jpg)
+If your capacitor is taller than 10mm and will not fit under the component cover, you can alternatively bend the legs and lie the capacitor down into the empty space on the PCB above the pad.
+
+![Tall capacitor](images/guide/capacitor-tall.jpg)
 
 ### Resettable fuse (F1)
 
@@ -144,6 +148,8 @@ Solder on the resettable fuse.
 After soldering, bend the fuse over to that it lays flat on the PCB.
 
 ![Fuse](images/guide/fuse.jpg)
+
+If you have placed the capacitor into the empty space that the fuse would usually occupy, straighten the legs of the fuse with pliers before soldering it so that it can be soldered lower into the PCB.
 
 ### Tactile switches (SW1,2)
 
