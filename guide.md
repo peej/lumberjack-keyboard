@@ -129,9 +129,9 @@ Do not insert microcontroller into the socket before soldering the socket to the
 
 ### Electrolytic capacitor (C3)
 
-Electrolytic capacitor is a polarized component, the short leg is the cathode and goes in the circular (left) pad on PCB.
+Electrolytic capacitor is a polarized component, the short leg is the cathode and goes in the circular (left) pad on PCB (nearest the C3 marking).
 
-The soldermask around the pads can cause confusion about which is the square pad as the circular pad has a square soldermask pattern around it, so be careful and double check. If in doubt, the capacitor should be orientated so that the side with the white line on it is on the left.
+The soldermask around the pads can cause confusion as to which pad is which. The circular pad has a white square pattern around it making it look like it is square, so be careful and double check. The capacitor should be orientated so that the side with the line on it is on the left.
 
 ![Capacitor](images/guide/capacitor.jpg)
 
