@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Lumberjack PCB"
-Date "2021-11-18"
-Rev "1.5"
+Date "2022-02-25"
+Rev "1.6"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -1338,45 +1338,45 @@ Connection ~ 3250 5000
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 5C122533
-P 6150 6950
-F 0 "H1" H 6250 6996 50  0000 L CNN
-F 1 "M2" H 6250 6905 50  0000 L CNN
-F 2 "lumberjack:MountingHole_M2" H 6150 6950 50  0001 C CNN
-F 3 "~" H 6150 6950 50  0001 C CNN
-	1    6150 6950
+P 6150 6150
+F 0 "H1" H 6250 6196 50  0000 L CNN
+F 1 "M2" H 6250 6105 50  0000 L CNN
+F 2 "lumberjack:MountingHole_M2" H 6150 6150 50  0001 C CNN
+F 3 "~" H 6150 6150 50  0001 C CNN
+	1    6150 6150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H2
 U 1 1 5C12253A
-P 6150 7150
-F 0 "H2" H 6250 7196 50  0000 L CNN
-F 1 "M2" H 6250 7105 50  0000 L CNN
-F 2 "lumberjack:MountingHole_M2" H 6150 7150 50  0001 C CNN
-F 3 "~" H 6150 7150 50  0001 C CNN
-	1    6150 7150
+P 6550 6150
+F 0 "H2" H 6650 6196 50  0000 L CNN
+F 1 "M2" H 6650 6105 50  0000 L CNN
+F 2 "lumberjack:MountingHole_M2" H 6550 6150 50  0001 C CNN
+F 3 "~" H 6550 6150 50  0001 C CNN
+	1    6550 6150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H3
 U 1 1 5C122541
-P 6150 7350
-F 0 "H3" H 6250 7396 50  0000 L CNN
-F 1 "M2" H 6250 7305 50  0000 L CNN
-F 2 "lumberjack:MountingHole_M2" H 6150 7350 50  0001 C CNN
-F 3 "~" H 6150 7350 50  0001 C CNN
-	1    6150 7350
+P 6150 6350
+F 0 "H3" H 6250 6396 50  0000 L CNN
+F 1 "M2" H 6250 6305 50  0000 L CNN
+F 2 "lumberjack:MountingHole_M2" H 6150 6350 50  0001 C CNN
+F 3 "~" H 6150 6350 50  0001 C CNN
+	1    6150 6350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H4
 U 1 1 5C13CC58
-P 6150 7550
-F 0 "H4" H 6250 7596 50  0000 L CNN
-F 1 "M2" H 6250 7505 50  0000 L CNN
-F 2 "lumberjack:MountingHole_M2" H 6150 7550 50  0001 C CNN
-F 3 "~" H 6150 7550 50  0001 C CNN
-	1    6150 7550
+P 6550 6350
+F 0 "H4" H 6650 6396 50  0000 L CNN
+F 1 "M2" H 6650 6305 50  0000 L CNN
+F 2 "lumberjack:MountingHole_M2" H 6550 6350 50  0001 C CNN
+F 3 "~" H 6550 6350 50  0001 C CNN
+	1    6550 6350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1973,23 +1973,23 @@ Wire Wire Line
 $Comp
 L Mechanical:MountingHole H5
 U 1 1 608A2ADF
-P 6600 6950
-F 0 "H5" H 6700 6996 50  0000 L CNN
-F 1 "M2" H 6700 6905 50  0000 L CNN
-F 2 "lumberjack:MountingSlot_M2" H 6600 6950 50  0001 C CNN
-F 3 "~" H 6600 6950 50  0001 C CNN
-	1    6600 6950
+P 6150 6700
+F 0 "H5" H 6250 6746 50  0000 L CNN
+F 1 "M2" H 6250 6655 50  0000 L CNN
+F 2 "lumberjack:MountingSlot_M2" H 6150 6700 50  0001 C CNN
+F 3 "~" H 6150 6700 50  0001 C CNN
+	1    6150 6700
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H6
 U 1 1 608A2ED7
-P 6600 7150
-F 0 "H6" H 6700 7196 50  0000 L CNN
-F 1 "M2" H 6700 7105 50  0000 L CNN
-F 2 "lumberjack:MountingSlot_M2" H 6600 7150 50  0001 C CNN
-F 3 "~" H 6600 7150 50  0001 C CNN
-	1    6600 7150
+P 6550 6700
+F 0 "H6" H 6650 6746 50  0000 L CNN
+F 1 "M2" H 6650 6655 50  0000 L CNN
+F 2 "lumberjack:MountingSlot_M2" H 6550 6700 50  0001 C CNN
+F 3 "~" H 6550 6700 50  0001 C CNN
+	1    6550 6700
 	1    0    0    -1  
 $EndComp
 Connection ~ 6300 5350
@@ -2518,12 +2518,12 @@ Wire Wire Line
 $Comp
 L Mechanical:MountingHole H7
 U 1 1 61287EB7
-P 6600 7350
-F 0 "H7" H 6700 7396 50  0000 L CNN
-F 1 "M2" H 6700 7305 50  0000 L CNN
-F 2 "lumberjack:MountingSlot_M2" H 6600 7350 50  0001 C CNN
-F 3 "~" H 6600 7350 50  0001 C CNN
-	1    6600 7350
+P 6150 6900
+F 0 "H7" H 6250 6946 50  0000 L CNN
+F 1 "M2" H 6250 6855 50  0000 L CNN
+F 2 "lumberjack:MountingSlot_M2" H 6150 6900 50  0001 C CNN
+F 3 "~" H 6150 6900 50  0001 C CNN
+	1    6150 6900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -2764,4 +2764,48 @@ Wire Wire Line
 	2750 3050 2350 3050
 Wire Wire Line
 	2850 2950 2350 2950
+$Comp
+L Mechanical:MountingHole H8
+U 1 1 621B11BE
+P 6150 7200
+F 0 "H8" H 6250 7246 50  0000 L CNN
+F 1 "M2" H 6250 7155 50  0000 L CNN
+F 2 "lumberjack:MountingSlot_M2" H 6150 7200 50  0001 C CNN
+F 3 "~" H 6150 7200 50  0001 C CNN
+	1    6150 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H10
+U 1 1 621B1460
+P 6550 7200
+F 0 "H10" H 6650 7246 50  0000 L CNN
+F 1 "M2" H 6650 7155 50  0000 L CNN
+F 2 "lumberjack:MountingSlot_M2" H 6550 7200 50  0001 C CNN
+F 3 "~" H 6550 7200 50  0001 C CNN
+	1    6550 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H9
+U 1 1 621B1642
+P 6150 7400
+F 0 "H9" H 6250 7446 50  0000 L CNN
+F 1 "M2" H 6250 7355 50  0000 L CNN
+F 2 "lumberjack:MountingSlot_M2" H 6150 7400 50  0001 C CNN
+F 3 "~" H 6150 7400 50  0001 C CNN
+	1    6150 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H11
+U 1 1 621B1903
+P 6550 7400
+F 0 "H11" H 6650 7446 50  0000 L CNN
+F 1 "M2" H 6650 7355 50  0000 L CNN
+F 2 "lumberjack:MountingSlot_M2" H 6550 7400 50  0001 C CNN
+F 3 "~" H 6550 7400 50  0001 C CNN
+	1    6550 7400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
