@@ -41,7 +41,7 @@ Ensure you use the correct size resistor for the correct position. You can ident
 
 ### Resistors for USB-C (R5,6)
 
-If you are using a UCB-C connector you will need to solder these extra two resistors. They are in the kit along with the connector.
+If you are using a UCB-C connector you will need to solder these extra two resistors. They are marked in the kit with a black dot on the paper to help distingish them from the other resistors.
 
 * R5,6: 5.1kΩ Green, brown, black, brown, red
 
@@ -63,11 +63,11 @@ Solder the crystal.
 
 ### Capacitors (C1,2,4,5)
 
-Solder the small yellow 22pF capacitors C1 and C2 (marked 22, alternatively they may be small and brown in your kit).
+Solder the small brown (or yellow) 22pF capacitors C1 and C2 (marked 22).
 
 Solder the small yellow 100nF capacitors C4 and C5 (marked 104).
 
-Do not get the two sets of capacitors confused.
+Do not get the two sets of capacitors confused. Depending on the pitch of the capacitors, you might need to bend the legs so that they fit into the pads.
 
 ![Capacitors](images/guide/capacitors.jpg)
 
@@ -79,6 +79,8 @@ Leave C3 until later as it is tall and will stop the PCB from laying flat.
 Place the USB connector into the footprint on the underside of the PCB, it should stay put while you solder all of the pins (including the 2 feet).
 
 If not, solder one foot first, then reheat the pad while pressing the connector into place so that it sits flush on the PCB. Then solder the other foot and the pins.
+
+The connector might be hard to insert and require the feet to be gently bent until they line up with the holes on the PCB.
 
 ![USB](images/guide/usb.jpg)
 
@@ -193,6 +195,8 @@ You will need to flash the microprocessor with a bootloader. To do this you will
 * Follow the [QMK ISP flashing guide](https://beta.docs.qmk.fm/using-qmk/guides/keyboard-building/isp_flashing_guide) to get the bootloader onto the chip.
 
 Don't forget to set the fuses: low `0xd7`, high `0xd0`, extended `0xd0`.
+
+There is a pre-compiled bootloader + firmware in the [bootloader directory](bootloader) along with an example `avrdude` command for flashing it.
 
 ### Firmware
 
