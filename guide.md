@@ -111,6 +111,12 @@ If you have a multimeter you can use it to check for bridges, check that the fol
 * Bottom 3 is the CC1 pin and should connect to the top pad of the R5 resistor.
 * Top 6 is the CC2 pin and should connect to the top pad of the R6 resistor.
 
+#### JST connector (J3,4)
+
+If you want to use a daughterboard instead of a USB connector, there are footprints for both a SMD or a THT connector. The connectors are positioned between the top and second row of switches so as to fall within the cable gutter of cases such as the Bakeneko, be aware that this might not be a suitable position for all cases.
+
+Note: A JST connector is not included in the Lumberjack kit, the SMD variant is part JST-SR-4 and for THT it is S4B-ZR.
+
 ### LEDs (LED1,2)
 
 Solder the LEDs.
