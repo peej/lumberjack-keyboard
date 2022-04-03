@@ -118,3 +118,11 @@ Affix the 4 standoffs to the PCB with screws from underneath the PCB. Use the re
 * Change MX footprints to MX/Alps/Choc combined footprint
 * Add through-hole JST connector footprint
 * Add silkscreen art to underside
+
+## Rev 1.6
+
+* Add mounting holes for standoffs so PCB can be used without a case
+
+## Rev 1.7
+
+* Change board outline to include cutouts for Cannon Keys Bakeneko and Singa Unikorn
