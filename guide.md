@@ -74,7 +74,7 @@ Do not get the two sets of capacitors confused. Depending on the pitch of the ca
 Leave C3 until later as it is tall and will stop the PCB from laying flat.
 
 ### USB connector (J1)
-:warning: Both **USB mini** and **USB Type-C** connector go on the **underside** of the PCB. :warning:
+:warning: Both the **USB mini** or the **USB Type-C** connector go on the **underside** of the PCB. :warning:
 
 ![USB](images/guide/usb_underside.jpg)
 
