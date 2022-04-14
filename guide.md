@@ -74,6 +74,10 @@ Do not get the two sets of capacitors confused. Depending on the pitch of the ca
 Leave C3 until later as it is tall and will stop the PCB from laying flat.
 
 ### USB connector (J1)
+:warning: Both **USB mini** and **USB Type-C** connector go on the **underside** of the PCB. :warning:
+
+![USB](images/guide/usb_underside.jpg)
+
 #### USB Mini
 
 Place the USB connector into the footprint on the underside of the PCB, it should stay put while you solder all of the pins (including the 2 feet).
