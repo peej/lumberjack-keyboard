@@ -204,7 +204,7 @@ You will need to flash the microprocessor with a bootloader. To do this you will
 * Download the [Plaid bootloader](https://github.com/hsgw/USBaspLoader/tree/plaid) and follow the instructions to compile the bootloader.
 * Follow the [QMK ISP flashing guide](https://beta.docs.qmk.fm/using-qmk/guides/keyboard-building/isp_flashing_guide) to get the bootloader onto the chip.
 
-Don't forget to set the fuses: low `0xd7`, high `0xd0`, extended `0xd0`.
+Don't forget to set the fuses: low `0xd7`, high `0xd0`, extended `0xfc`.
 
 There is a pre-compiled bootloader + firmware in the [bootloader directory](bootloader) along with an example `avrdude` command for flashing it.
 
