@@ -48,7 +48,7 @@ See [the build guide](guide.md) for more information.
 
 Firmware is available in the QMK repository under the name `peej/lumberjack`.
 
-Follow the [QMK firmware instructions](https://beta.docs.qmk.fm/using-qmk/guides/flashing/flashing) to build and flash the firmware.
+Follow the [QMK firmware instructions](https://docs.qmk.fm/#/flashing) to build and flash the firmware.
 
 To put the board into bootloader mode so it is ready to recieve firmware, press and hold the BOOT button (SW2) while pressing and releasing the RESET button (SW1). The board will now be detected as an USBasp device and can have the firmware flashed via the USB port.
 
