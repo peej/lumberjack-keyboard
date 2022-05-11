@@ -202,7 +202,7 @@ A bootloader is a piece of software on the microprocessor which can be used to f
 You will need to flash the microprocessor with a bootloader. To do this you will need another device which can be connected to the ISP headers and used to flash the bootloader to the chip. Since Lumberjack is the same as the Plaid, we can use the same bootloader.
 
 * Download the [Plaid bootloader](https://github.com/hsgw/USBaspLoader/tree/plaid) and follow the instructions to compile the bootloader.
-* Follow the [QMK ISP flashing guide](https://beta.docs.qmk.fm/using-qmk/guides/keyboard-building/isp_flashing_guide) to get the bootloader onto the chip.
+* Follow the [QMK ISP flashing guide](https://docs.qmk.fm/#/isp_flashing_guide) to get the bootloader onto the chip.
 
 Don't forget to set the fuses: low `0xd7`, high `0xd0`, extended `0xfc`.
 
@@ -210,7 +210,7 @@ There is a pre-compiled bootloader + firmware in the [bootloader directory](boot
 
 ### Firmware
 
-Follow the [QMK firmware instructions](https://beta.docs.qmk.fm/using-qmk/guides/flashing/flashing) to build and flash the firmware.
+Follow the [QMK firmware instructions](https://docs.qmk.fm/#/flashing) to build and flash the firmware.
 
 `qmk flash -kb peej/lumberjack`
 
