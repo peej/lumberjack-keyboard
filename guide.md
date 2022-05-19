@@ -17,9 +17,9 @@ This assembly guide will guide you through putting together your Lumberjack keyb
 
 ## Soldering
 
-### Zener diodes (D66,67)
+### Zener diodes (D61,62)
 
-Solder the Zener diodes D66 and D67.
+Solder the Zener diodes D61 and D62 (D66 and D67 in older PCB revisions).
 
 Diodes are a polarized component and therefore take care of direction, the black line on the diode is the cathode and goes in the square pad on PCB.
 
@@ -41,7 +41,7 @@ Ensure you use the correct size resistor for the correct position. You can ident
 
 ### Resistors for USB-C (R5,6)
 
-If you are using a UCB-C connector you will need to solder these extra two resistors. They are in the kit along with the connector.
+If you are using a UCB-C connector you will need to solder these extra two resistors. They are marked in the kit with a black dot on the paper to help distingish them from the other resistors.
 
 * R5,6: 5.1kΩ Green, brown, black, brown, red
 
@@ -63,20 +63,28 @@ Solder the crystal.
 
 ### Capacitors (C1,2,4,5)
 
-Solder the small brown capacitors C1 and C2.
+Solder the small brown (or yellow) 22pF capacitors C1 and C2 (marked 22).
 
-Solder the slightly larger yellow capacitors C4 and C5.
+Solder the small yellow 100nF capacitors C4 and C5 (marked 104).
+
+Do not get the two sets of capacitors confused. Depending on the pitch of the capacitors, you might need to bend the legs so that they fit into the pads.
 
 ![Capacitors](images/guide/capacitors.jpg)
 
 Leave C3 until later as it is tall and will stop the PCB from laying flat.
 
 ### USB connector (J1)
+:warning: Both the **USB mini** or the **USB Type-C** connector go on the **underside** of the PCB. :warning:
+
+![USB](images/guide/usb_underside.jpg)
+
 #### USB Mini
 
 Place the USB connector into the footprint on the underside of the PCB, it should stay put while you solder all of the pins (including the 2 feet).
 
 If not, solder one foot first, then reheat the pad while pressing the connector into place so that it sits flush on the PCB. Then solder the other foot and the pins.
+
+The connector might be hard to insert and require the feet to be gently bent until they line up with the holes on the PCB.
 
 ![USB](images/guide/usb.jpg)
 
@@ -107,6 +115,12 @@ If you have a multimeter you can use it to check for bridges, check that the fol
 * Bottom 3 is the CC1 pin and should connect to the top pad of the R5 resistor.
 * Top 6 is the CC2 pin and should connect to the top pad of the R6 resistor.
 
+#### JST connector (J3,4)
+
+If you want to use a daughterboard instead of a USB connector, there are footprints for both a SMD or a THT connector. The connectors are positioned between the top and second row of switches so as to fall within the cable gutter of cases such as the Bakeneko, be aware that this might not be a suitable position for all cases.
+
+Note: A JST connector is not included in the Lumberjack kit, the SMD variant is part JST-SR-4 and for THT it is S4B-ZR.
+
 ### LEDs (LED1,2)
 
 Solder the LEDs.
@@ -119,7 +133,7 @@ LEDs are a polarized component and therefore take care of direction, the short l
 
 Solder on the IC socket. 
 
-The IC socket is a polarized component, check the notch on silkscreen and IC Socket.
+The IC socket mounts a polarized component, check the notch on silkscreen and IC Socket.
 
 ![IC Socket](images/guide/ic-socket.jpg)
 
@@ -127,9 +141,17 @@ Do not insert microcontroller into the socket before soldering the socket to the
 
 ### Electrolytic capacitor (C3)
 
-Electrolytic capacitor is a polarized component, the short leg is the cathode and goes in the square pad on PCB. To fit under the component cover, ensure that your capacitor body is less than 10mm tall.
+Electrolytic capacitor is a polarized component, the short leg is the cathode and goes in the circular (left) pad on PCB (nearest the C3 marking).
+
+The soldermask around the pads can cause confusion as to which pad is which. The circular pad has a white square pattern around it making it look like it is square, so be careful and double check. The capacitor should be orientated so that the side with the line on it is on the left.
 
 ![Capacitor](images/guide/capacitor.jpg)
+
+To fit under the component cover, ensure that your capacitor body is less than 10mm tall.
+
+If your capacitor is taller than 10mm and will not fit under the component cover, you can alternatively bend the legs and lie the capacitor down into the empty space on the PCB above the pad.
+
+![Tall capacitor](images/guide/capacitor-tall.jpg)
 
 ### Resettable fuse (F1)
 
@@ -138,6 +160,8 @@ Solder on the resettable fuse.
 After soldering, bend the fuse over to that it lays flat on the PCB.
 
 ![Fuse](images/guide/fuse.jpg)
+
+If you have placed the capacitor into the empty space that the fuse would usually occupy, straighten the legs of the fuse with pliers before soldering it so that it can be soldered lower into the PCB.
 
 ### Tactile switches (SW1,2)
 
@@ -155,7 +179,7 @@ Used for programming the microprocessor with the bootloader directly. If your MC
 
 Insert ATMEGA328P into IC Socket.
 
-Ensure that you insert it in the correct orientation, the semicircular mark should match that of the IC socket.
+Ensure that you insert it in the correct orientation, the semicircular mark should match that of the silkscreen.
 
 ![ATMEGA328P](images/guide/atmega328p.jpg)
 
@@ -164,7 +188,7 @@ Ensure that you insert it in the correct orientation, the semicircular mark shou
 Before connecting the board to your computer, a few things to double check just to be safe:
 
 * Take a close look at the USB connector pins and visually check there is no short between the VCC and GND pins. If you have a multimeter, now might be a good time to use it.
-* Check the orientation of polarized components (ATMEGA328p, diode, resettable fuse, electrolytic capacitor).
+* Check the orientation of polarized components (ATMEGA328p, diode, electrolytic capacitor).
 * Double check the correct resistor values are in the correct locations.
 
 ## Software
@@ -178,13 +202,15 @@ A bootloader is a piece of software on the microprocessor which can be used to f
 You will need to flash the microprocessor with a bootloader. To do this you will need another device which can be connected to the ISP headers and used to flash the bootloader to the chip. Since Lumberjack is the same as the Plaid, we can use the same bootloader.
 
 * Download the [Plaid bootloader](https://github.com/hsgw/USBaspLoader/tree/plaid) and follow the instructions to compile the bootloader.
-* Follow the [QMK ISP flashing guide](https://beta.docs.qmk.fm/using-qmk/guides/keyboard-building/isp_flashing_guide) to get the bootloader onto the chip.
+* Follow the [QMK ISP flashing guide](https://docs.qmk.fm/#/isp_flashing_guide) to get the bootloader onto the chip.
 
-Don't forget to set the fuses: low `0xd7`, high `0xd0`, extended `0xd0`.
+Don't forget to set the fuses: low `0xd7`, high `0xd0`, extended `0xfc`.
+
+There is a pre-compiled bootloader + firmware in the [bootloader directory](bootloader) along with an example `avrdude` command for flashing it.
 
 ### Firmware
 
-Follow the [QMK firmware instructions](https://beta.docs.qmk.fm/using-qmk/guides/flashing/flashing) to build and flash the firmware.
+Follow the [QMK firmware instructions](https://docs.qmk.fm/#/flashing) to build and flash the firmware.
 
 `qmk flash -kb peej/lumberjack`
 

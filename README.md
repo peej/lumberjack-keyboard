@@ -2,7 +2,7 @@
 
 Lumberjack is a split 5x12 ortholinear keyboard PCB using through-hole components only.
 
-![Tofu w/ SA Vilebloom](images/tofu-sa-vilebloom.jpg)
+![Tofu w/ KAT Space Cadet](images/tofu-kat-spacecadet.jpg)
 
 The goal of this project is to build an all through-hole component ortholinear PCB that fits in a standard 60% tray mount case.
 
@@ -48,7 +48,7 @@ See [the build guide](guide.md) for more information.
 
 Firmware is available in the QMK repository under the name `peej/lumberjack`.
 
-Follow the [QMK firmware instructions](https://beta.docs.qmk.fm/using-qmk/guides/flashing/flashing) to build and flash the firmware.
+Follow the [QMK firmware instructions](https://docs.qmk.fm/#/flashing) to build and flash the firmware.
 
 To put the board into bootloader mode so it is ready to recieve firmware, press and hold the BOOT button (SW2) while pressing and releasing the RESET button (SW1). The board will now be detected as an USBasp device and can have the firmware flashed via the USB port.
 
@@ -59,6 +59,10 @@ Note that due to the BOOT button (SW2) sharing a pin with column 3, when pressed
 ## VIA
 
 There is a VIA compatible firmware available in QMK. With this firmware flashed, the board will be automatically recognised by VIA when you plug it in.
+
+## Bootloader
+
+If you have a "raw" chip without a bootloader, you will need to compile and flash the bootloader onto the chip via another device. [See the build guide for more information](guide.md#bootloader).
 
 ## Matrix information
 
@@ -82,3 +86,43 @@ Cut a piece of 2mm thick acrylic to size (95x57mm) and drill 4 m2 holes in the c
 Affix the 4 standoffs to the PCB with screws from underneath the PCB. Use the remaining 4 screws to attach the acrylic to the top of the standoffs.
 
 ![Completed build w/o caps](images/complete.jpg)
+
+# Revisions
+
+## Rev 1.1
+
+* Fix cosmetic errors in silkscreen
+* Increase resistor footprint size
+* Fix R1 resistor connection to D-
+
+## Rev 1.2
+
+* Add JST socket footprint for USB daughterboard
+* Rotate central mount hole 90 degrees
+
+## Rev 1.3
+
+* Add hybrid USB port footprint for mini and type C
+* Fix numbering of zener diode footprints
+* Flip MX7 to be south facing
+
+## Rev 1.4
+
+* Use USB footprint with better positioning
+* Move 5.1k resistors to better location
+* Change MX8 to allow both north and south facing switch
+## Rev 1.5
+
+* Change board outline to include cutouts for Bakeneko 60
+* Re-route traces away from edges of the board
+* Change MX footprints to MX/Alps/Choc combined footprint
+* Add through-hole JST connector footprint
+* Add silkscreen art to underside
+
+## Rev 1.6
+
+* Add mounting holes for standoffs so PCB can be used without a case
+
+## Rev 1.7
+
+* Change board outline to include cutouts for Cannon Keys Bakeneko and Singa Unikorn
