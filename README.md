@@ -87,6 +87,15 @@ Affix the 4 standoffs to the PCB with screws from underneath the PCB. Use the re
 
 ![Completed build w/o caps](images/complete.jpg)
 
+# Electronic component cradles
+
+Want to give your components the comfort they need, right?
+
+These 3d printable cradles for your electornic components provided by 
+SuPaSeM#3659 (discord) will hold things in place, keep them neat and tidy, and cradle your components like a baby.
+
+![Cradles preview](images/cradles.jpg)
+
 # Revisions
 
 ## Rev 1.1
