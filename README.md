@@ -26,9 +26,11 @@ See the [Bill of materials](BOM.md) for a detailed list of the required parts.
 
 PCBs can be manufactuered by a variety of online PCB fabricators. You can use [PCBShopper](https://pcbshopper.com/) to search for the best price.
 
-The zip file in the gerber directory contains the gerber files your fabricator will need to make the PCB [lumberjack.zip](https://github.com/peej/lumberjack-keyboard/blob/master/gerber/lumberjack.zip) PCB.
+The [zip file in the gerber directory](https://github.com/peej/lumberjack-keyboard/blob/master/gerber/lumberjack.zip) contains the gerber files your fabricator will need to make the PCB.
 
 When uploading the gerber zip files, use the default PCB settings.
+
+Note that when uploading to JLCPCB, the upload tool may not detect the dimensions of the PCB from the gerber files and may not generate a preview image. This appears to be an issue with JLCPCB and you can manually enter the PCB size as 94.6x285mm.
 
 ![PCB](images/pcb.jpg)
 
