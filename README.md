@@ -46,6 +46,10 @@ Ensure that polarised components (diodes, LEDs, electrolytic capacitor (C3), IC 
 
 See [the build guide](guide.md) for more information.
 
+## Need help?
+
+Have questions or need help, reach out via [our Discord server](https://discord.gg/cQ9EXqQmpE) where you will find many helpful Lumberjack owners.
+
 # Firmware
 
 Firmware is available in the QMK repository under the name `peej/lumberjack`.
