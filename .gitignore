@@ -5,3 +5,4 @@ sym-lib-table
 *-rescue.*
 *-bak
 .DS_Store
+*-backups
