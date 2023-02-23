@@ -1,11 +1,11 @@
-G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,(6.0.5-0)*
-G04 #@! TF.CreationDate,2022-06-06T14:33:40+02:00*
+G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,6.0.10-86aedd382b~118~ubuntu22.10.1*
+G04 #@! TF.CreationDate,2023-02-23T17:17:37+01:00*
 G04 #@! TF.ProjectId,lumberjack-split,6c756d62-6572-46a6-9163-6b2d73706c69,rev?*
 G04 #@! TF.SameCoordinates,Original*
 G04 #@! TF.FileFunction,Profile,NP*
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW (6.0.5-0)) date 2022-06-06 14:33:40*
+G04 Created by KiCad (PCBNEW 6.0.10-86aedd382b~118~ubuntu22.10.1) date 2023-02-23 17:17:37*
 %MOMM*%
 %LPD*%
 G01*
