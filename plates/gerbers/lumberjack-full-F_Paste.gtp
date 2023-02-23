@@ -1,12 +1,12 @@
-%TF.GenerationSoftware,KiCad,Pcbnew,(6.0.5-0)*%
-%TF.CreationDate,2022-06-06T14:32:42+02:00*%
+%TF.GenerationSoftware,KiCad,Pcbnew,6.0.10-86aedd382b~118~ubuntu22.10.1*%
+%TF.CreationDate,2023-02-23T17:24:00+01:00*%
 %TF.ProjectId,lumberjack-full,6c756d62-6572-46a6-9163-6b2d66756c6c,rev?*%
 %TF.SameCoordinates,Original*%
 %TF.FileFunction,Paste,Top*%
 %TF.FilePolarity,Positive*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW (6.0.5-0)) date 2022-06-06 14:32:42*
+G04 Created by KiCad (PCBNEW 6.0.10-86aedd382b~118~ubuntu22.10.1) date 2023-02-23 17:24:00*
 %MOMM*%
 %LPD*%
 G01*
