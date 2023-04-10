@@ -17,6 +17,42 @@ This assembly guide will guide you through putting together your Lumberjack keyb
 
 ## Soldering
 
+### USB connector (J1)
+First you will solder the USB connector to the **underside** of the PCB. All other components go on the top.
+
+![USB](images/guide/usb_underside.jpg)
+
+Due to the small size of the pins on the connector you will need to use a different soldering technique called drag soldering. You will need a separate supply of flux to do this, either liquid flux or a flux pen.
+
+* Insert the USB connector into the board.
+* Flip the board over and solder one of the legs into place.
+* Reheat the pad and press the USB port firmly into place to ensure it sits flat before then soldering the other 3 legs.
+* Apply no-clean flux across all of the small pins.
+* Apply a small amount of solder to your iron and drag it across the pins, repeat until all holes are filled with solder.
+* The flux will cause the solder to flow to the pins and avoid creating solder bridges between the pins.
+* Add more flux as needed as you go along.
+* Use your iron between the pads to remove any solder bridges.
+* Check the solder joints carefully, under a magnifying glass if needed, to ensure there are no bridges between pads.
+
+Remember to also install the two extra resistors (R5 & R6).
+
+![USB-C](images/guide/usb-c.jpg)
+
+If you have a multimeter you can use it to check for bridges, put it into continuity mode and check that the following pins connect to each other and all others do not:
+
+* Top 1 & 8, bottom 1 & 8 are ground pins and should all connect to each other and the square ground pad of the USB-mini footprint.
+* Top 2 & 7, bottom 2 & 7 are V+ pins and should all connect to each other and the round bottom left pad of the USB-mini.
+* Top 4 & bottom 5 are D- pins and should connect to top left pad of the USB-mini.
+* Top 5 & bottom 4 are D+ pins and should connect to bottom center pad of the USB-mini.
+* Bottom 3 is the CC1 pin and should connect to the top pad of the R5 resistor.
+* Top 6 is the CC2 pin and should connect to the top pad of the R6 resistor.
+
+#### JST connector (J3,4)
+
+If you want to use a daughterboard instead of a USB connector, there are footprints for both a SMD or a THT connector. The connectors are positioned between the top and second row of switches so as to fall within the cable gutter of cases such as the Bakeneko, be aware that this might not be a suitable position for all cases.
+
+Note: A JST connector is not included in the Lumberjack kit, the SMD variant is part JST-SR-4 and for THT it is S4B-ZR.
+
 ### Zener diodes (D61,62)
 
 Solder the Zener diodes D61 and D62 (D66 and D67 in older PCB revisions).
@@ -71,55 +107,7 @@ Do not get the two sets of capacitors confused. Depending on the pitch of the ca
 
 ![Capacitors](images/guide/capacitors.jpg)
 
-Leave C3 until later as it is tall and will stop the PCB from laying flat.
-
-### USB connector (J1)
-:warning: Both the **USB mini** or the **USB Type-C** connector go on the **underside** of the PCB. :warning:
-
-![USB](images/guide/usb_underside.jpg)
-
-#### USB Mini
-
-Place the USB connector into the footprint on the underside of the PCB, it should stay put while you solder all of the pins (including the 2 feet).
-
-If not, solder one foot first, then reheat the pad while pressing the connector into place so that it sits flush on the PCB. Then solder the other foot and the pins.
-
-The connector might be hard to insert and require the feet to be gently bent until they line up with the holes on the PCB.
-
-![USB](images/guide/usb.jpg)
-
-#### USB Type-C
-
-If you are installing a USB-C connector ensure you have installed the two extra resistors (R5 & R6).
-
-Due to the small size of the pins on the connector you will need to use a different soldering technique called drag soldering.
-
-* Insert the USB connector into the board, the pins are very small and might need bending slightly so that they align correctly.
-* Flip the board over and solder one of the legs into place.
-* Reheat the pad and press the USB port firmly into place to ensure it sits flat before then soldering the other 3 legs.
-* Apply no-clean flux across all of the small pins.
-* Apply a small amount of solder to your iron and drag it across the pins, repeat until all holes are filled with solder.
-* The flux will cause the solder to flow to the pins and avoid creating solder bridges between the pins.
-* Add more flux as needed as you go along.
-* Use your iron between the pads to remove any solder bridges.
-* Check the solder joints carefully, under a magnifying glass if needed, to ensure there are no bridges between pads.
-
-![USB-C](images/guide/usb-c.jpg)
-
-If you have a multimeter you can use it to check for bridges, check that the following pins connect to each other and all others do not:
- 
-* Top 1 & 8, bottom 1 & 8 are ground pins and should all connect to each other and the square ground pad of the USB-mini footprint.
-* Top 2 & 7, bottom 2 & 7 are V+ pins and should all connect to each other and the round bottom left pad of the USB-mini.
-* Top 4 & bottom 5 are D- pins and should connect to top left pad of the USB-mini.
-* Top 5 & bottom 4 are D+ pins and should connect to bottom center pad of the USB-mini.
-* Bottom 3 is the CC1 pin and should connect to the top pad of the R5 resistor.
-* Top 6 is the CC2 pin and should connect to the top pad of the R6 resistor.
-
-#### JST connector (J3,4)
-
-If you want to use a daughterboard instead of a USB connector, there are footprints for both a SMD or a THT connector. The connectors are positioned between the top and second row of switches so as to fall within the cable gutter of cases such as the Bakeneko, be aware that this might not be a suitable position for all cases.
-
-Note: A JST connector is not included in the Lumberjack kit, the SMD variant is part JST-SR-4 and for THT it is S4B-ZR.
+Leave C3 until later as it is tall and will stop the PCB from laying flat making the other steps harder.
 
 ### LEDs (LED1,2)
 
@@ -179,7 +167,11 @@ Used for programming the microprocessor with the bootloader directly. If your MC
 
 Insert ATMEGA328P into IC Socket.
 
+You will probably need to carefully bend the legs to make it fit into the socket. Take care and gently bend them against a flat surface until they are spaced correctly for the socket.
+
 Ensure that you insert it in the correct orientation, the semicircular mark should match that of the silkscreen.
+
+Take care that all the legs go into the socket correctly and do not get accidently bend outside of the socket. The end legs are small and fragile, repeated bending of the legs can cause them to break off.
 
 ![ATMEGA328P](images/guide/atmega328p.jpg)
 
@@ -241,6 +233,8 @@ Plug in the PCB and use a pair of tweazers or a piece of wire to check each keys
 ### Stabilizers
 
 If you are using 2u keys and want to use key stabilizers, fix them to the board before inserting the switches.
+
+If you are using screw in stabilizers, be aware that the screws can cause a short to the unused switch pads for the 1u keys. To avoid this, use plastic washers or electrical tape under the screws to isolate them from the PCB.
 
 ### Trim switch legs
 
