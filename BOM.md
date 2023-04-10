@@ -10,8 +10,7 @@
 | ![D1-60](images/bom/d1-60.jpg)       | D1-60     | 60  | 1n4148         | diode                                      |
 | ![D61,D62](images/bom/d61-62.jpg)    | D61,D62   | 2   | 3.6V           | zener diode                                |
 | ![F1](images/bom/f1.jpg)             | F1        | 1   | 100mA          | polyfuse                                   |
-| ![USB](images/bom/j1-mini.jpg)       | J1        | 1   | XM7D-0512      | USB miniB connector                        |
-| ![USB-C](images/bom/j1-usbc.jpg)     | J1        | 1   | USB4085-GF-A   | USB-C connector                            |
+| ![USB](images/bom/j1-usbc.jpg)       | J1        | 1   | USB4085-GF-A   | USB-C connector                            |
 | ![J2](images/bom/j2.jpg)             | J2        | 1   | 2x3 p2.54mm    | AVR ISP pin header (optional)              |
 | ![J3](images/bom/j3.jpg)             | J3        | 1   | SM04B-SRSS-TB  | JST connector (optional for daughterboard) |
 | ![LED1,LED2](images/bom/led1-2.jpg)  | LED1,LED2 | 2   | 3mm            | LED                                        |
