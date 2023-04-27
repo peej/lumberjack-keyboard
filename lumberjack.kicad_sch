@@ -1595,6 +1595,8 @@
     (uuid febda068-8713-4b67-8f4d-758eaea71290)
   )
 
+  (no_connect (at 44.45 63.5) (uuid b0eeee1a-fb91-4025-9e6c-86bf0eb6efa1))
+  (no_connect (at 44.45 66.04) (uuid b0eeee1a-fb91-4025-9e6c-86bf0eb6efa2))
   (no_connect (at 35.56 111.76) (uuid b48d6a59-621e-4b5b-b1d3-c200792362fb))
 
   (wire (pts (xy 81.28 167.64) (xy 81.28 187.96))
@@ -5482,7 +5484,7 @@
     (uuid 00000000-0000-0000-0000-0000601e2e5d)
     (property "Reference" "J1" (id 0) (at 31.9278 28.7782 0))
     (property "Value" "USB" (id 1) (at 31.9278 31.0896 0))
-    (property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4085" (id 2) (at 33.02 50.8 0)
+    (property "Footprint" "lumberjack:TYPE-C-31-M-12" (id 2) (at 33.02 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" (id 3) (at 33.02 50.8 0)
@@ -6364,7 +6366,7 @@
       (reference "H11") (unit 1) (value "M2") (footprint "lumberjack:MountingHole_M2")
     )
     (path "/00000000-0000-0000-0000-0000601e2e5d"
-      (reference "J1") (unit 1) (value "USB") (footprint "Connector_USB:USB_C_Receptacle_GCT_USB4085")
+      (reference "J1") (unit 1) (value "USB") (footprint "lumberjack:TYPE-C-31-M-12")
     )
     (path "/00000000-0000-0000-0000-00005c3f2fd0"
       (reference "J2") (unit 1) (value "AVR_ISP_6") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical")
