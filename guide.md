@@ -18,34 +18,30 @@ This assembly guide will guide you through putting together your Lumberjack keyb
 ## Soldering
 
 ### USB connector (J1)
-First you will solder the USB connector to the **underside** of the PCB. All other components go on the top.
+First you will solder the USB connector (or JST connector) to the **underside** of the PCB. All other components go on the top.
 
-![USB](images/guide/usb_underside.jpg)
+The connector is a surface mount device (SMD), meaning you will need to use a different soldering technique called drag soldering. You will need a separate supply of no-clean flux to do this, either liquid flux or a flux pen. Some isopropyl alcohol and a cotton bud is useful for cleaning up the flux residue afterwards.
 
-Due to the small size of the pins on the connector you will need to use a different soldering technique called drag soldering. You will need a separate supply of flux to do this, either liquid flux or a flux pen.
-
+* Tin the pads of the J1 connector by adding a small amount of solder to each pad.
 * Insert the USB connector into the board.
-* Flip the board over and solder one of the legs into place.
-* Reheat the pad and press the USB port firmly into place to ensure it sits flat before then soldering the other 3 legs.
-* Apply no-clean flux across all of the small pins.
-* Apply a small amount of solder to your iron and drag it across the pins, repeat until all holes are filled with solder.
+* Apply no-clean flux across all of the pads.
+* Reheat the pads and press the USB port firmly into place to ensure it sits flat.
 * The flux will cause the solder to flow to the pins and avoid creating solder bridges between the pins.
 * Add more flux as needed as you go along.
 * Use your iron between the pads to remove any solder bridges.
+* Flip the board over and solder the legs into place.
 * Check the solder joints carefully, under a magnifying glass if needed, to ensure there are no bridges between pads.
 
 Remember to also install the two extra resistors (R5 & R6).
 
-![USB-C](images/guide/usb-c.jpg)
-
 If you have a multimeter you can use it to check for bridges, put it into continuity mode and check that the following pins connect to each other and all others do not:
 
-* Top 1 & 8, bottom 1 & 8 are ground pins and should all connect to each other and the square ground pad of the USB-mini footprint.
-* Top 2 & 7, bottom 2 & 7 are V+ pins and should all connect to each other and the round bottom left pad of the USB-mini.
-* Top 4 & bottom 5 are D- pins and should connect to top left pad of the USB-mini.
-* Top 5 & bottom 4 are D+ pins and should connect to bottom center pad of the USB-mini.
-* Bottom 3 is the CC1 pin and should connect to the top pad of the R5 resistor.
-* Top 6 is the CC2 pin and should connect to the top pad of the R6 resistor.
+* Pins 1 & 12 are ground pins and should connect to each other and the ground pad of J4.
+* Pins 2 & 11 are V+ pins and should connect to each other and the V+ pad of the J4.
+* Pins 5 & 7 are D+ pins and should connect to each other and the D+ pad of the J4.
+* Pins 6 & 8 are D- pins and should connect to each other and the D- pad of the J4.
+* Pin 3 is the CC1 pin and should connect to the right pad of the R6 resistor only.
+* Pin 9 is the CC2 pin and should connect to the left pad of the R5 resistor only.
 
 #### JST connector (J3,4)
 
