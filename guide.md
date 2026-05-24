@@ -232,11 +232,11 @@ If you are using screw in stabilizers, be aware that the screws can cause a shor
 
 ### Trim switch legs
 
-When fitting key switches, the switches at the 'Q' and 'P' positions on the 2nd row will fowl on the standoffs in your keyboard case, so you need to trim down one of the stabilizing pins and part of the center pin to ensure the PCB fits flush within the case.
+When fitting key switches, the switches at the 'Q' and 'P' positions on the 2nd row will foul on the standoffs in your keyboard case, so you need to trim down one of the stabilizing pins and part of the center pin to ensure the PCB fits flush within the case.
 
 ![Switch legs](images/guide/switch-mod1.jpg)
 
-If you are using a 2u key on the right hand side, you will also need to trim down the center pin so that it does not fowl on the standoff. The position the case standoffs will be is marked on the soldermask of the underside of the PCB.
+If you are using a 2u key on the right hand side, you will also need to trim down the center pin so that it does not foul on the standoff. The position the case standoffs will be is marked on the soldermask of the underside of the PCB.
 
 ![Switch center pin](images/guide/switch-mod2.jpg)
 
