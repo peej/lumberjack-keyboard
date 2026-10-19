@@ -43,7 +43,7 @@ If you have a multimeter you can use it to check for bridges, put it into contin
 
 #### JST connector (J3,4)
 
-If you want to use a daughterboard instead of a USB connector, there are footprints for both a SMD or a THT connector. The connectors are positioned between the top and second row of switches so as to fall within the cable gutter of cases such as the Bakeneko, be aware that this might not be a suitable position for all cases.
+If you want to use a daughterboard instead of a USB connector, there are footprints for either a SMD or a THT connector. The connectors are positioned between the top and second row of switches so as to fall within the cable gutter of cases such as the Bakeneko, be aware that this might not be a suitable position for all cases.
 
 Note: A JST connector is not included in the Lumberjack kit, the SMD variant is part JST-SR-4 and for THT it is S4B-ZR.
 
@@ -71,7 +71,7 @@ Ensure you use the correct size resistor for the correct position. You can ident
 
 ### Resistors for USB-C (R5,6)
 
-The USB-C connector requires two more resistors. They are marked in the kit with a black dot on the paper to help distingish them from the other resistors.
+The USB-C connector requires two more resistors. They are marked in the kit with a black dot on the paper to help distinguish them from the other resistors.
 
 * R5,6: 5.1kΩ Green, brown, black, brown, red
 
@@ -139,7 +139,7 @@ If your capacitor is taller than 10mm and will not fit under the component cover
 
 Solder on the resettable fuse.
 
-After soldering, bend the fuse over to that it lays flat on the PCB.
+After soldering, bend the fuse over so that it lays flat on the PCB.
 
 ![Fuse](images/guide/fuse.jpg)
 
@@ -165,7 +165,7 @@ You will probably need to carefully bend the legs to make it fit into the socket
 
 Ensure that you insert it in the correct orientation, the semicircular mark should match that of the silkscreen.
 
-Take care that all the legs go into the socket correctly and do not get accidently bend outside of the socket. The end legs are small and fragile, repeated bending of the legs can cause them to break off.
+Take care that all the legs go into the socket correctly and do not get accidentally bent outside of the socket. The end legs are small and fragile, repeated bending of the legs can cause them to break off.
 
 ![ATMEGA328P](images/guide/atmega328p.jpg)
 
@@ -179,7 +179,7 @@ Before connecting the board to your computer, a few things to double check just 
 
 ## Software
 
-Note: If you got your Lumberjack as a kit, the microprocesor is already flashed with a bootloader and firmware, and you can skip this and the firmware steps.
+Note: If you got your Lumberjack as a kit, the microprocessor is already flashed with a bootloader and firmware, and you can skip this and the firmware steps.
 
 ### Bootloader
 
@@ -200,11 +200,11 @@ Follow the [QMK firmware instructions](https://docs.qmk.fm/#/flashing) to build 
 
 `qmk flash -kb peej/lumberjack`
 
-To put the board into bootloader mode so it is ready to recieve firmware, press and hold the BOOT button (SW2) while pressing and releasing the RESET button (SW1). The board will now be detected as an USBasp device and can have the firmware flashed via the USB port.
+To put the board into bootloader mode so it is ready to receive firmware, press and hold the BOOT button (SW2) while pressing and releasing the RESET button (SW1). The board will now be detected as a USBasp device and can have the firmware flashed via the USB port.
 
-Pressing the RESET button (SW1) on its own will restart the microprocessor. Once flashed with firmware it is neccessary to reset the keyboard so as to return control to the new firmware.
+Pressing the RESET button (SW1) on its own will restart the microprocessor. Once flashed with firmware it is necessary to reset the keyboard so as to return control to the new firmware.
 
-Note that due to the BOOT button (SW2) sharing a pin with column 3, when pressed the keys in that column will also activate. This is expected behavour but can be a little annoying or confusing if you are not expecting it.
+Note that due to the BOOT button (SW2) sharing a pin with column 3, when pressed the keys in that column will also activate. This is expected behaviour but can be a little annoying or confusing if you are not expecting it.
 
 ### Can't recognize bootloader
 
@@ -220,7 +220,7 @@ Note that due to the BOOT button (SW2) sharing a pin with column 3, when pressed
 
 Now the board should be fully functional, so check that everything works before adding the switches.
 
-Plug in the PCB and use a pair of tweazers or a piece of wire to check each keyswitch pad triggers a keypress.
+Plug in the PCB and use a pair of tweezers or a piece of wire to check each keyswitch pad triggers a keypress.
 
 ## Switches
 
@@ -248,7 +248,7 @@ If you are using a plate, insert the switches into the plate first and then inse
 
 Ensure that the switch is fully inserted and sitting flush with the PCB before soldering.
 
-Note also that the switch at the 'Q' position is upsidedown so that the switch pins do not interfere with the case standoffs.
+Note also that the switch at the 'Q' position is upside down so that the switch pins do not interfere with the case standoffs.
 
 ## Component cover
 
