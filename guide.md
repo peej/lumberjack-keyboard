@@ -200,7 +200,7 @@ Follow the [QMK firmware instructions](https://docs.qmk.fm/#/flashing) to build 
 
 `qmk flash -kb peej/lumberjack`
 
-To put the board into bootloader mode so it is ready to recieve firmware, press and hold the BOOT button (SW2) while pressing and releasing the RESET button (SW1). The board will now be detected as an USBasp device and can have the firmware flashed via the USB port.
+To put the board into bootloader mode so it is ready to receive firmware, press and hold the BOOT button (SW2) while pressing and releasing the RESET button (SW1). The board will now be detected as an USBasp device and can have the firmware flashed via the USB port.
 
 Pressing the RESET button (SW1) on its own will restart the microprocessor. Once flashed with firmware it is neccessary to reset the keyboard so as to return control to the new firmware.
 
